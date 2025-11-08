@@ -220,12 +220,16 @@
                 </div>
 
                 <div class="col-md-6 pt-5 mt-2">
-                    <form action="#" id="contact-form">
-                        <input type="text" class="btn col-lg-10 col-12 mt-3" placeholder="Your Name" aria-label="Your name" required>
-                        <input type="email" class="btn col-lg-10 col-12 mt-3" placeholder="Your Email" aria-label="Your email" required>
-                        <textarea placeholder="Your Message" class="btn col-lg-10 col-12 mt-3" aria-label="Your message" required></textarea>
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" id="contact-form">
+                        <input type="hidden" name="contact" value="contact">
+                        <p style="display:none">
+                            <label>Don’t fill this out: <input name="bot-field"></label>
+                        </p>
+
+                        <input type="text" name="name" class="btn col-lg-10 col-12 mt-3" placeholder="Your Name" aria-label="Your name" required>
+                        <input type="email" name="email" class="btn col-lg-10 col-12 mt-3" placeholder="Your Email" aria-label="Your email" required>
+                        <textarea name="message" placeholder="Your Message" class="btn col-lg-10 col-12 mt-3" aria-label="Your message" required></textarea>
                         <button type="submit" class="col-lg-10 col-12 btn mt-3 send_btn">Send</button>
-                        <p id="form-status" class="col-lg-10 col-12 mt-3" role="status" aria-live="polite" style="display:none;">Thanks! We'll get back to you at vctfreelancing@outlook.com.</p>
                     </form>
                 </div>
                 
@@ -357,19 +361,5 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script>
-            // Simple client-side confirmation on contact form submit
-            (function() {
-                var form = document.getElementById('contact-form');
-                if (!form) return;
-                form.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    var status = document.getElementById('form-status');
-                    if (status) {
-                        status.style.display = 'block';
-                    }
-                });
-            })();
-        </script>
   </body>
 </html>
