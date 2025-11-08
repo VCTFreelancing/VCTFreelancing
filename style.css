@@ -1,0 +1,332 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#ffffff;
+    color:#222;
+}
+
+/*---- navbar start ----*/
+.nav_bar{
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+.navbar{
+    background-image: linear-gradient(90deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%);
+    padding:0 !important;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+.navbar-brand img{
+    height:44px;
+    padding-left:15px;
+    transition:.3s;
+}
+.navbar-brand img:hover{
+    transform:scale(1.05);
+}
+.navbar-nav li{
+    padding:0px 10px ;
+}
+.navbar-nav li a{
+    color:#f5f9ff !important;
+    font-size:14px !important;
+    text-align:center !important;
+    transition: .35s;
+    font-weight:500;
+    letter-spacing:.5px;
+    position:relative;
+}
+.navbar-nav li a:after{
+    content:'';
+    position:absolute;
+    left:50%;
+    bottom:4px;
+    width:0;
+    height:2px;
+    background:#fff;
+    transition:.35s;
+    transform:translateX(-50%);
+    border-radius:2px;
+}
+.navbar-nav li a:hover:after{
+    width:60%;
+}
+/*.login_singup a:hover{
+    color:#a517ba !important;
+    background-color:white;
+    border-radius:2px;
+}*/
+
+.fa-bars{
+    color:white;
+    font-size:30px !important;
+}
+.navbar-toggler{
+    outline:none !important;
+}
+
+/*---- navbar ends ----*/
+
+/* Contact CTA style */
+.contact-cta{
+    background:#ffffff22;
+    border-radius:24px;
+    padding:8px 16px !important;
+    margin-right:10px;
+    border:1px solid rgba(255,255,255,.35);
+}
+.contact-cta:hover{
+    background:#ffffff33;
+}
+
+
+/*---- banner starts ----*/
+.banner{
+    background-image: linear-gradient(90deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%);
+    color:white;
+    padding-top:5%;
+    position:relative;
+    overflow:hidden;
+}
+.banner:before{
+    content:'';
+    position:absolute;
+    top:-10%;
+    right:-20%;
+    width:60%;
+    height:140%;
+    background:radial-gradient(circle at center, rgba(255,255,255,.25), rgba(255,255,255,0));
+    transform:rotate(25deg);
+}
+.promo_title{
+    font-size:44px;
+    font-weight:700;
+    margin-top:100px;
+    letter-spacing:1px;
+}
+.play_btn{
+    width:48px;
+    margin:20px;
+    filter:drop-shadow(0 4px 10px rgba(0,0,0,.25));
+}
+.banner a{
+    color:white;
+    transition:0.9s;
+}
+.play img:hover,.img img{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius:40px;
+}
+.img-fluid{
+    
+    border-radius:40px;
+}
+.bottom-img{
+    width:100%;
+}
+
+/*---- banner ends ----*/
+
+/*---------- services section starts ----------*/
+
+.services{
+    padding:80px 0px;
+}
+.services i{
+    font-size:50px;
+    color:#0052D4;
+}
+.services img{
+    width:20vh;
+    filter:drop-shadow(0 4px 8px rgba(0,0,0,.1));
+}
+.services i:hover{
+    color:#4364F7;
+}
+.services h4{
+    font-weight:bolder;
+    padding:5px;
+    margin-top:25px;
+    text-transform:uppercase;
+}
+.services p{
+    font-size:13px;
+}
+.services .col-md-4:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.title{
+    color:#0046b3;
+}
+.title::before{
+    content:"";
+    background:#0052D4;
+    height:5px;
+    width:200px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    transform:translateY(63px);
+    border-radius:4px;
+}
+.title::after{
+    content:"";
+    background:#6FB1FC;
+    height:10px;
+    width:60px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:40px;
+    display:block;
+    transform:translateY(17px);
+    border-radius:6px;
+}
+
+.all_services_btn{
+    background-image: linear-gradient(90deg, #0052D4 0%, #4364F7 100%);
+    color:white;
+    border-radius:40px;
+    margin-top:30px;
+    transition: .35s;
+    padding:10px 28px;
+    font-weight:600;
+    letter-spacing:.5px;
+    box-shadow:0 6px 18px -8px rgba(0,82,212,.6);
+}
+.all_services_btn:hover{
+    background-image: linear-gradient(90deg,#4364F7 0%, #0052D4 100%);
+    transform:translateY(-2px);
+    box-shadow:0 10px 24px -10px rgba(0,82,212,.65);
+}
+
+
+/*---------- services section ends ----------*/
+
+
+/*---------- package section srtarts ----------*/
+.about_section{
+    background-color:#f5f8fc;
+}
+.about_section p{
+    font-size:40px;
+    font-weight:bolder;
+    margin-top:8%;
+}
+.about_section ul li{
+    font-size: 15px;
+    margin:10px 0px;
+}
+/*---------- package section ends ----------*/
+
+/*---------- testimonial part starts --------*/
+.testimonials{
+    border-left: 4px solid #0052D4; 
+    margin-bottom:50px;
+    background:#ffffff;
+    border-radius:4px;
+    padding:22px 18px;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+.testimonials img{
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+    margin:0 10px;
+}
+.user_information{
+    display:inline-block;
+    font-size:12px;
+}
+.user_about{
+    font-size:14px;
+}
+/*---------- testimonial part ends --------*/
+
+/*---------- contact part starts----------*/
+.contact_page img{
+    width:70%;
+}
+.contact_page input,.contact_page textarea{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.send_btn{
+    background:linear-gradient(90deg,#0052D4,#4364F7);
+    color:white;
+    font-weight:600;
+    letter-spacing:.5px;
+}
+.send_btn:hover{
+    background:linear-gradient(90deg,#4364F7,#0052D4);
+}
+/*---------- contact part ends----------*/
+
+
+/*---------- social media icon part starts ----------*/
+.social_media_part p{
+    font-size:30px;
+}
+.social_media_part img{
+    width:8vh;
+    transition: .4s;
+}
+.social_media_part img:hover{
+    transform:translateY(-6px) scale(1.05);
+}
+.images{
+    display:flex;
+    justify-content: center;
+
+}
+/*---------- social media icon part ends ----------*/
+
+/*---------- footer start ----------*/
+.footer_part{
+    background-image: linear-gradient(90deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%);
+}
+.footer-img{
+    width:100%;
+}
+.footer_logo{
+    width:60%;
+}
+.company_desc{
+    color:white;
+    font-size:12px;
+}
+.footer_contact h5{
+    color:white;
+}
+.footer_contact ul li{
+    list-style: none;
+}
+.footer_contact a{
+    color:white;
+    font-size:12px;
+}
+.footer_part a{
+    color:#eef6ff;
+}
+.footer_part a:hover{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+/* Utility tweaks */
+::selection{
+    background:#0052D4;
+    color:#fff;
+}
+html { scroll-behavior: smooth; }
+
+/* Responsive adjustments */
+@media (max-width: 767.98px){
+    .promo_title{font-size:34px; margin-top:40px;}
+    .navbar-brand img{height:40px;}
+    .services img{width:16vh;}
+}
+
+/*---------- footer ends ----------*/
