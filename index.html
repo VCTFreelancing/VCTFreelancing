@@ -25,7 +25,7 @@
     <section class="nav_bar">
         <!--- navbar start --->
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#"><img src="images/1_logo.png" alt="VCT Freelancing logo"></a>
+            <a class="navbar-brand" href="#" aria-label="VCT Home"><span class="brand-text">VCT</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
@@ -77,7 +77,7 @@
     </section>
 
 
-    <!------ banner sebction starts ------>
+    <!------ banner section starts ------>
     <section class="banner" aria-label="Hero">
         <div class="container">
 
@@ -86,8 +86,12 @@
 
 
                 <div class="col-md-6 play">
-                    <p class="promo_title">VCT Freelancing</p>
-                    <p>IT consulting and custom software development for Windows and web. We also build mechanical and static calculation tools tailored to your engineering workflows.</p>
+                    <p class="promo_title">Smart Automation & Custom Software for Engineering and Industry.</p>
+                    <p>We develop powerful Windows desktop and web applications, automate CAD workflows, and integrate APIs to streamline your engineering and business processes.</p>
+                    <div class="cta-group mt-4" role="group" aria-label="Primary calls to action">
+                        <a href="#CONTACT" class="btn hero-btn primary">Get a Quote</a>
+                        <a href="#CONTACT" class="btn hero-btn secondary ml-2">Schedule a Free Consultation</a>
+                    </div>
                 </div>
 
 
@@ -143,67 +147,231 @@
     <!------ service section ends ------>
 
 
-    <!---------- about part starts ---------->
-    <section class="about_section pb-5 pt-5" id="ABOUT" aria-label="About VCT Freelancing">
-        <div class="container">
-            <div class="title_container pb-5 text-center"> <h2 class="title">WHY CHOOSE US ?</h2></div>
-            <div class="row">
-
-                <div class="col-md-6">  
-                    <p class="">Why we're different</p>
-                    <ul class="pl-5 pt-2">
-                        <li>Deep expertise across Windows desktop and web stacks</li>
-                        <li>Engineering-first mindset for accuracy and reliability</li>
-                        <li>Custom calculation tools aligned to your standards</li>
-                        <li>Clear communication and on-time delivery</li>
-                        <li>Security, performance, and maintainability by default</li>
-                        <li>Flexible engagement: consulting or end-to-end builds</li>
-                        <li>Post-launch support and continuous improvement</li>
-                    </ul>
+    <!------ key services section starts ------>
+    <section class="services" id="SERVICES" aria-label="Key Services">
+        <div class="container text-center">
+            <div class="title_container pb-4"> <h2 class="title">KEY SERVICES</h2></div>
+            <p class="section-lead mb-4">Icons below highlight our core offerings. Scroll for details.</p>
+            <div class="row services-cards">
+                <div class="col-6 col-md-4 col-lg-3 p-3">
+                    <div class="service-card h-100">
+                        <i class="fas fa-desktop" aria-hidden="true"></i>
+                        <h4>Desktop Apps</h4>
+                        <p>Custom Windows software built with .NET, C#, Python (WPF/WinForms).</p>
+                    </div>
                 </div>
-
-                <div class="col-md-6">
-                    <img src="images/network.png" class="img-fluid" alt="Connected network illustration">
+                <div class="col-6 col-md-4 col-lg-3 p-3">
+                    <div class="service-card h-100">
+                        <i class="fas fa-globe" aria-hidden="true"></i>
+                        <h4>Web Apps</h4>
+                        <p>Modern web apps with ASP.NET, React, or Python frameworks.</p>
+                    </div>
                 </div>
-
+                <div class="col-6 col-md-4 col-lg-3 p-3">
+                    <div class="service-card h-100">
+                        <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+                        <h4>API Integration</h4>
+                        <p>Connect ERPs, CRMs, cloud storage, and design tools via REST APIs.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 p-3">
+                    <div class="service-card h-100">
+                        <i class="fas fa-drafting-compass" aria-hidden="true"></i>
+                        <h4>CAD Automation</h4>
+                        <p>AutoCAD/Revit/SolidWorks automation for drawings and data.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 p-3 mx-auto">
+                    <div class="service-card h-100">
+                        <i class="fas fa-calculator" aria-hidden="true"></i>
+                        <h4>Calculation Tools</h4>
+                        <p>Engineering calculators with validation and PDF/Excel output.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!---------- about part end ---------->
-
-
-    <!---------- testimoial part starts ---------->
 
     <section class="testemoial pt-5 pb-5" id="TESTIMONIALS" aria-label="Feedback">
-        <div class="title_container pb-5 text-center"><h2 class="title">WE VALUE YOUR FEEDBACK</h2></div> 
+    <!---------- about us + expertise starts ---------->
+    <section class="about_us pt-5 pb-5" id="ABOUT" aria-label="About VCT Freelancing">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-11 testimonials">
-                    <p class="user_about">Looking forward to your feedback. Share your thoughts so we can continuously improve our solutions and better support your engineering and development goals.</p>
+            <div class="title_container pb-4 text-center"> <h2 class="title">ABOUT US</h2></div>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <p class="section-lead">We are a team of freelance software developers specializing in engineering automation and business productivity solutions.</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h6 class="subtitle">Industries Served</h6>
+                            <ul class="check-list">
+                                <li>Manufacturing</li>
+                                <li>Design & Engineering</li>
+                                <li>Architecture</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <h6 class="subtitle">Key Technologies</h6>
+                            <ul class="check-list">
+                                <li>.NET, C#, Python</li>
+                                <li>AutoCAD & Revit APIs</li>
+                                <li>React, ASP.NET Core</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="images/network.png" class="img-fluid" alt="Connected network illustration">
                 </div>
             </div>
         </div>
     </section>
+    <!---------- about us + expertise ends ---------->
 
-    <!---------- testemoial part ends ---------->
-
-    <!---------- project upgration starts ---------->
-    <section class="pt-5 pb-5" id="PROJECT" aria-label="Project statistics">
-        <div class="title_container pb-5 text-center"> <h2 class="title">PROJECT STATS</h2></div>
+    <!---------- mission and why choose us starts ---------->
+    <section class="about_section pb-5 pt-5" aria-label="Mission and Why Choose Us">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-3 text-center card pt-3">
-                    <h5>Project Done</h5>
-                    <p>00</p>
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h3 class="mb-3">Mission & Vision</h3>
+                    <p>Empowering engineers and businesses through intelligent automation.</p>
                 </div>
-                <div class="col-3 text-center card pt-3">
-                    <h5>Running Project</h5>
-                    <p>00</p>
+                <div class="col-md-6">
+                    <h3 class="mb-3">Why choose us</h3>
+                    <ul class="pl-4 pt-1">
+                        <li>Custom-tailored solutions</li>
+                        <li>Direct communication with the developer</li>
+                        <li>Fast turnaround & post-project support</li>
+                        <li>Cost-effective and reliable</li>
+                    </ul>
                 </div>
-                <div class="col-3 text-center card pt-3">
-                    <h5>Pending Project</h5>
-                    <p>00</p>
+            </div>
+        </div>
+    </section>
+    <!---------- mission and why choose us ends ---------->
+
+    <!---------- detailed services starts ---------->
+    <section class="services-detailed pt-5 pb-5" id="SERVICES-DETAILS" aria-label="Detailed Services">
+        <div class="container">
+            <div class="title_container pb-4 text-center"> <h2 class="title">SERVICES</h2></div>
+            <div class="service-block mb-4">
+                <h4><i class="fas fa-desktop mr-2" aria-hidden="true"></i>Windows Desktop Applications</h4>
+                <ul>
+                    <li>Custom business tools and engineering software.</li>
+                    <li>Built using .NET, C#, Python, WPF, or WinForms.</li>
+                    <li>Integration with databases (SQL Server, SQLite, etc.).</li>
+                </ul>
+                <p class="mb-0"><strong>Example use cases:</strong></p>
+                <ul class="mb-3">
+                    <li>Data entry automation</li>
+                    <li>Calculation software</li>
+                    <li>BOM (Bill of Materials) management tools</li>
+                </ul>
+            </div>
+
+            <div class="service-block mb-4">
+                <h4><i class="fas fa-globe mr-2" aria-hidden="true"></i>Web-Based Applications</h4>
+                <ul>
+                    <li>Modern web apps using ASP.NET, React, or Python frameworks.</li>
+                    <li>Secure login systems, dashboards, data visualization.</li>
+                </ul>
+                <p class="mb-0"><strong>Example use cases:</strong></p>
+                <ul class="mb-3">
+                    <li>Project tracking portal</li>
+                    <li>Engineering document management system</li>
+                    <li>Estimation and reporting tools</li>
+                </ul>
+            </div>
+
+            <div class="service-block mb-4">
+                <h4><i class="fas fa-calculator mr-2" aria-hidden="true"></i>Calculation Tools</h4>
+                <ul>
+                    <li>Engineering and technical calculation apps (structural, mechanical, process, etc.).</li>
+                    <li>Report generation (PDF/Excel export).</li>
+                    <li>Custom formulas, validation, and error-checking features.</li>
+                </ul>
+            </div>
+
+            <div class="service-block mb-4">
+                <h4><i class="fas fa-exchange-alt mr-2" aria-hidden="true"></i>API Integration</h4>
+                <ul>
+                    <li>Connect systems: ERPs, CRMs, cloud storage, or design tools via APIs.</li>
+                </ul>
+                <p class="mb-0"><strong>Examples:</strong></p>
+                <ul class="mb-3">
+                    <li>Integrate AutoCAD or Revit data into company databases.</li>
+                    <li>Sync drawing data with Excel or cloud services.</li>
+                </ul>
+            </div>
+
+            <div class="service-block">
+                <h4><i class="fas fa-drafting-compass mr-2" aria-hidden="true"></i>CAD & Drawing Automation</h4>
+                <ul>
+                    <li>AutoCAD, Revit, or SolidWorks automation using APIs (C#, .NET, Python).</li>
+                </ul>
+                <p class="mb-0"><strong>Examples:</strong></p>
+                <ul class="mb-0">
+                    <li>Auto title-block filling</li>
+                    <li>Automatic drawing generation from templates</li>
+                    <li>Batch export or data extraction</li>
+                    <li>BOM extraction automation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!---------- detailed services ends ---------->
+
+    <!---------- technology stack starts ---------->
+    <section class="tech-stack pt-5 pb-5" id="TECH" aria-label="Technology Stack">
+        <div class="container">
+            <div class="title_container pb-4 text-center"> <h2 class="title">TECHNOLOGY STACK / TOOLS</h2></div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <h5>Languages</h5>
+                    <ul class="stack-list">
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>VBA</li>
+                    </ul>
                 </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <h5>Frameworks</h5>
+                    <ul class="stack-list">
+                        <li>.NET</li>
+                        <li>WPF</li>
+                        <li>ASP.NET Core</li>
+                        <li>React</li>
+                        <li>Flask</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <h5>CAD APIs</h5>
+                    <ul class="stack-list">
+                        <li>AutoCAD .NET API</li>
+                        <li>Revit API</li>
+                        <li>SolidWorks API</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <h5>Databases</h5>
+                    <ul class="stack-list">
+                        <li>SQL Server</li>
+                        <li>SQLite</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <h5>Others</h5>
+                    <ul class="stack-list">
+                        <li>REST API</li>
+                        <li>Excel Automation</li>
+                        <li>PDF Generation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------- technology stack ends ---------->
 
             </div>
         </div>
@@ -275,7 +443,7 @@
                 <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
   
           <!-- Content -->
-                    <h6 class="text-uppercase font-weight-bold"><img src="images/demo-logo3.png" class="footer_logo" alt="VCT Freelancing logo"></h6>
+                    <h6 class="text-uppercase font-weight-bold brand-text-footer" aria-label="VCT">VCT</h6>
           <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>VCT Freelancing is an IT consulting company delivering custom Windows and web applications, plus mechanical and static calculation tools for engineering teams.</p>
   
